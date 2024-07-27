@@ -8,7 +8,8 @@ a {
 
 body {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .skeleton {
@@ -42,6 +43,8 @@ header {
 
 .main-header {
     background-color: rgb(189, 40, 43);
+    display: flex;
+    justify-content: center;
 }
 
 .main-header > ul {
@@ -49,6 +52,7 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 0 ;
+    width: 1400px;
 }
 
 .main-header li {
@@ -74,6 +78,10 @@ header {
 
 .main-header a.active {
     text-decoration: underline;
+}
+
+#test {
+    width: 100vw;
 }
 
 
