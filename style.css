@@ -16,6 +16,10 @@ body {
     width: 1400px;
 }
 
+.content-width {
+    width: 800px;
+}
+
 header {
 }
 
@@ -37,6 +41,17 @@ header {
     margin-right: 20px;
 }
 
+.header-top > ul img {
+    width: 20px;
+    height: 20px;
+}
+
+.header-top > ul > li {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
 .header-top a {
     color: black;
 }
@@ -45,12 +60,17 @@ header {
     background-color: rgb(189, 40, 43);
     display: flex;
     justify-content: center;
+    box-shadow: 0 4px 8px black, 0 2px 8px black inset;
+    width: 100vw;
+    margin-bottom: 40px;
+    position: sticky;
+    top: 0;
 }
 
 .main-header > ul {
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    justify-content:stretch;
     padding: 0 ;
     width: 1400px;
 }
@@ -80,38 +100,54 @@ header {
     text-decoration: underline;
 }
 
-#test {
-    width: 100vw;
-}
 
 
-/* Bemutatkozas start*/
-
-.introduction {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-}
-
-.introduction img {
-    width: 800px;
-}
-
-.introduction-text {
-    width: 800px;
-}
-
-.introduction p {
+/* GLOBAL TEXT STYLE START */
+.text {
     font-size: 14pt;
     margin-bottom: 10px;
     text-align: justify;
     line-height: 1.5;
 }
 
+
+/* GLOBAL TEXT STYLE END */
+
+/* BEMUTATKOZÁS START */
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
 p.signature {
     margin-top: 20px;
 }
 
-/* Bemutatkozas end*/
+/* BEMUTATKOZÁS END */
+
+/* KARUGYINTEZES START */
+
+.claim-management h1{
+    font-weight: 400;
+    margin: 40px 0 30px 0;
+}
+
+.claim-management h2{
+    font-weight:500;
+    margin: 30px 0 20px 40px;
+    
+}
+
+.claim-management ul{
+    margin-left: 50px;
+    margin-bottom: 30px;
+}
+
+p.last{
+    margin-bottom: 1000px;
+}
+
+/* KARUGYINTEZES END */
