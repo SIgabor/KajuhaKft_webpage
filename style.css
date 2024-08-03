@@ -113,7 +113,7 @@ header {
 
 /* GLOBAL TEXT STYLE END */
 
-/* BEMUTATKOZÁS START */
+/* BEMUTATKOZAS START */
 
 .introduction {
     display: flex;
@@ -126,7 +126,7 @@ p.signature {
     margin-top: 20px;
 }
 
-/* BEMUTATKOZÁS END */
+/* BEMUTATKOZAS END */
 
 /* KARUGYINTEZES START */
 
@@ -151,3 +151,66 @@ p.last{
 }
 
 /* KARUGYINTEZES END */
+
+/* SZOLGALTATASOK START */
+
+.services {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.services h2{
+    margin-bottom: 30px;
+}
+
+.services .flex-container {
+    display: flex;
+    justify-content: center;
+}
+
+.services .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 25px;
+    row-gap: 25px;
+    margin-bottom: 30px;
+}
+
+.services .item {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    border: 1px solid red;
+}
+
+.services .item:hover {
+    /*zoom*/
+}
+
+/* SZOLGALTATASOK END */
+
+/* DOKUMENTUMOK START */
+
+.documents li {
+    margin-bottom: 30px;
+}
+
+.documents h2{
+    margin-bottom: 15px;
+}
+
+.documents .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 20px;
+    
+}
+
+.documents img {
+    width: 192;
+    height: 106px;
+}
+
+
+/* DOKUMENTUMOK END */
