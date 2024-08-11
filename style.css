@@ -235,15 +235,23 @@ p.last{
     gap: 30px;
 }
 
-.colour-codes .position img{
+.colour-codes .usage img {
     float: right;
     width: 500px;
+    margin-left: 60px;
+    border-radius: 15px;
+}
+
+.colour-codes .position img{
+    float: right;
+    width: 400px;
     margin-left: 60px;
 }
 
 .colour-codes .image-flex-container {
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 .colour-codes h2 {
@@ -257,10 +265,56 @@ p.last{
 .colour-codes .position {
     margin-top: 30px;
     padding: 0 30px 0 30px;
+    margin-bottom: 70px;
 }
 
 .colour-codes .image-flex-container>img {
-    margin: 15px 0 20px 0;
+    margin: 15px 0 40px 0;
+    width: 600px;
+}
+
+.colour-codes .position .table-flex-container {
+    display: flex;
+    justify-content:center;
+    gap: 40px;
+}
+
+.colour-codes .position table {
+    border-collapse: collapse;
+    border: 1px solid black;
+    
+    
+}
+
+.colour-codes .position th, td{
+    border: 1px solid black;
+    padding: 2px 5px 2px 5px;
 }
 
 /* SZINKOD END */
+
+/* KAPCSOLAT START */
+
+.contact {
+    padding: 0 30px 0 30px;
+    display: flex;
+    gap: 80px;
+    align-items: center;
+}
+
+.contact iframe {
+    width: 600px;
+    height: 400px;
+}
+
+.contact ul{
+    list-style: none;
+    padding: 0;
+    height: 100%;
+}
+
+.contact ul li {
+    margin: 40px 0 40px 0;
+}
+
+/* KAPCSOLAT END */
