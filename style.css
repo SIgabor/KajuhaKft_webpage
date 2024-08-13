@@ -181,11 +181,53 @@ p.last{
     width: 300px;
     height: 300px;
     border-radius: 20px;
-    border: 1px solid red;
+    background-size: 100%; /* A háttérkép eredeti mérete */
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-size 0.5s ease; /* Smooth transition */
+    cursor: pointer;
 }
 
+/* Hover hatás a háttérkép zoomolásához */
 .services .item:hover {
-    /*zoom*/
+    background-size: 120%; /* Növeld meg a háttérkép méretét */
+}
+
+/* Példa: különböző háttérképek az egyes item osztályú divekhez */
+.services .item:nth-child(1) {
+    background-image: url('./assets/images/automentes.webp');
+}
+
+.services .item:nth-child(2) {
+    background-image: url('./assets/images/csereauto-szerviz-idejere-3.jpg.webp');
+}
+
+.services .item:nth-child(3) {
+    background-image: url('./assets/images/fenyszoro-polirozas.jpg');
+}
+
+.services .item:nth-child(4) {
+    background-image: url('./assets/images/karosszeria-javitas-4x3.jpg');
+}
+
+.services .item:nth-child(5) {
+    background-image: url('./assets/images/szelvedo-csere.jpg');
+}
+
+.services .item:nth-child(6) {
+    background-image: url('./assets/images/fenyszoro-polirozas.jpg');
+}
+
+.services .item:nth-child(7) {
+    background-image: url('./assets/images/automentes.jpg.webp');
+}
+
+.services .item:nth-child(8) {
+    background-image: url('./assets/images/csereauto-szerviz-idejere-3.jpg.webp');
+}
+
+.services .item:nth-child(9) {
+    background-image: url('./assets/images/fenyszoro-polirozas.jpg');
 }
 
 /* SZOLGALTATASOK END */
