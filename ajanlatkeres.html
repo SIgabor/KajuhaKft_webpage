@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kajuha Kft.</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <script src="./index.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "Rn2r2u1JucCIk2qiB",
+            });
+        })();
+    </script>
+</head>
+
+<body>
+    <div class="skeleton">
+        <header>
+            <div class="header-top">
+                <a href="./index.html"><img src="./assets/images/logo.png" alt="Kajuha Kft. logo"></a>
+
+                <ul>
+                    <li><img src="./assets/svgs/phone-svgrepo-com.svg" alt=""><a
+                            href="tel:+36309152915">+36-30/915-2915</a></li>
+                    <li><img src="./assets/svgs/email-sign-svgrepo-com.svg" alt=""><a
+                            href="mailto:kajuha.auto@gmail.com">kajuha.auto@gmail.com</a></li>
+                    <li><img src="./assets/svgs/position-marker-svgrepo-com.svg" alt=""><a
+                            href="https://www.google.com/maps/dir//Kajuha+Aut%C3%B3f%C3%A9nyez%C5%91+%C3%A9s+Aut%C3%B3jav%C3%ADt%C3%B3+Kft.+Miskolc+Lor%C3%A1ntffy+Zsuzsanna+utca+36+3533/@48.0910196,20.7106881,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x47409e5089c918b3:0xc8108a12b84c633d!2m2!1d20.7106881!2d48.0910196?entry=ttu"
+                            target="_blank">3533 Miskolc, Lorántffy Zsuzsanna utca 36.</a></li>
+                </ul>
+            </div>
+
+        </header>
+    </div>
+    <div class="main-header">
+        <ul>
+            <li><a href="./bemutatkozas.html">Bemutatkozás</a></li>
+            <li><a href="./karugyintezes.html">Kárügyintézés</a></li>
+            <li><a href="./szolgaltatasok.html">Szolgáltatások</a></li>
+            <li><a href="https://minden3d.com/panoramak/kajuha/tour.html?fbclid=IwAR2ChJGiDDxleG90ipAL8vht7xq1xA8ac5Zw2xG0cbZBYiQCgUbc3ey1deQ"
+                    target="_blank">Műhely 3D</a></li>
+            <li><a href="./dokumentumok.html">Dokumentumok</a></li>
+            <li><a href="./szinkod.html">Színkód</a></li>
+            <li><a href="">Galéria</a></li>
+            <li class="active"><a href="./ajanlatkeres.html">Ajánlatkérés</a></li>
+            <li><a href="./kapcsolat.html">Kapcsolatok</a></li>
+        </ul>
+    </div>
+
+    <div class="skeleton">
+
+        <div class="quotation-request">
+            <h2>Kérjen tőlünk árajánlatot emailben!</h2>
+            <div class="line"></div>
+            <div class="dual-section">
+                <div class="form">
+                    <input type="text" class="form-control form-width" , id="name"
+                        placeholder="Kérjük adja meg a nevét!">
+                    <input type="email" class="form-control" , id="email" placeholder="Kérjük adja meg az email címét!">
+                    <textarea id="message" rows="10" class="form-control"
+                        placeholder="Kérjük ide írja az üzenetet!"></textarea>
+                    <button class="btn" id="sendBtn" onclick="btnPress(); sendMail();">Küldés</button>
+                </div>
+                <img src="./assets/images/kajuha-auto.jpg" alt="">
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
