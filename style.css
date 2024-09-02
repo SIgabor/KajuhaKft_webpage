@@ -63,7 +63,7 @@ header {
     justify-content: center;
     box-shadow: 0 4px 8px black, 0 2px 8px black inset;
     width: 100vw;
-    margin-bottom: 100px;
+    margin-bottom: 70px;
     position: sticky;
     top: 0;
     z-index: 3;
@@ -256,7 +256,7 @@ p.last{
 }
 
 .services .item:nth-child(3) {
-    background-image: url('./assets/images/szelvedo-javitas.webp');
+    background-image: url('./assets/images/karugyintezes.webp');
 }
 
 .services .item:nth-child(4) {
@@ -264,7 +264,7 @@ p.last{
 }
 
 .services .item:nth-child(5) {
-    background-image: url('./assets/images/karugyintezes.webp');
+    background-image: url('./assets/images/szelvedo-javitas.webp');
 }
 
 .services .item:nth-child(6) {
@@ -515,13 +515,13 @@ p.last{
     background-color: rgb(189, 40, 43);
     width: 730px;
     height: 8px;
-    margin: 10px 0 40px 0;
+    margin: 10px 0 10px 0;
     border-radius: 9px;
 }
 
 .contact iframe {
-    width: 800px;
-    height: 600px;
+    width: 650px;
+    height: 500px;
     border-radius: 15px;
     box-shadow: 3px 3px 8px black;
 }
