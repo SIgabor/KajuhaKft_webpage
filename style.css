@@ -73,6 +73,7 @@ header {
     list-style: none;
     display: flex;
     justify-content:stretch;
+    justify-content: center;
     padding: 0 ;
     width: 1400px;
 }
@@ -81,7 +82,6 @@ header {
     height: 70px;
     display: flex;
     align-items: center;
-    padding: 0 10px 0 10px;
 }
 
 .main-header li:hover{
@@ -95,7 +95,7 @@ header {
     font-size: 16pt;
     color: aliceblue;
     font-weight: 600;
-    padding: 25px 10px 25px 10px;
+    padding: 25px 28px 25px 28px;
 }
 
 .main-header a.active {
@@ -458,7 +458,21 @@ p.last{
     padding: 4px;
     border-radius: 6px;
     border: 1px solid black;
+}
 
+.quotation-request #subject {
+    font-size: 13pt;
+    box-shadow: 1px 1px 4px black;
+    padding: 4px;
+    border-radius: 6px;
+    border: 1px solid black;
+}
+
+.quotation-request #error-message {
+    color: rgb(210, 0, 0);
+    font-weight:600;
+    margin: 5px 0 0 0;
+    display: none;
 }
 
 .quotation-request textarea {

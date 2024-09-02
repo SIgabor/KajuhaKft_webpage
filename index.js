@@ -1,7 +1,7 @@
 function btnPress() {
     var btn = document.getElementById("sendBtn")
     btn.style.opacity = 0.5;
-    setTimeout(function() {
+    setTimeout(function () {
         btn.style.opacity = 1;
     }, 100);
 };
@@ -10,6 +10,7 @@ function sendMail() {
     var params = {
         name: document.getElementById("name").value,
         email: document.getElementById("email").value,
+        subject: document.getElementById("subject").value,
         message: document.getElementById("message").value,
 
     };
@@ -17,11 +18,21 @@ function sendMail() {
     const serviceID = "service_30ebsn8";
     const templateID = "template_juao5mn";
 
-    emailjs.send(serviceID, templateID, params).then((res) => {
-        document.getElementById("name").value ="";
-        document.getElementById("email").value ="";
-        document.getElementById("message").value ="";
-        alert("Sikeresen elküldve. További szép napot!");
-    })
-    .catch((err) => console.log(err));
+    
+
+    if (subject.value == "") {
+        document.getElementById("error-message").style.display = "block";
+        document.getElementById("subject").style.border = " 3px solid red"
+    } else {
+        emailjs.send(serviceID, templateID, params).then((res) => {
+            document.getElementById("name").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("subject").value = "";
+            document.getElementById("message").value = "";
+            document.getElementById("error-message").style.display = "none";
+            document.getElementById("subject").style.border = " 1px solid black"
+            alert("Sikeresen elküldve. További szép napot!");
+        })
+            .catch((err) => console.log(err));
+    }
 }
