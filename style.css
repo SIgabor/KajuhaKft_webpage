@@ -17,6 +17,16 @@ body {
     width: 1400px;
 }
 
+/*----!!!----EXPERIMENTAL----!!!----*/
+
+@media screen and (max-width: 1400px) {
+    .skeleton{
+        width: 1000px;
+    }
+}   
+
+/*----!!!----EXPERIMENTAL----!!!----*/
+
 .content-width {
     width: 800px;
 }
@@ -356,9 +366,9 @@ p.last{
 }
 
 .documents img {
-    width: 192;
+    width: 192px;
     height: 106px;
-    object-fit: cover;
+    object-fit: contain;
     box-shadow: 2px 2px 6px black;
 
 }
