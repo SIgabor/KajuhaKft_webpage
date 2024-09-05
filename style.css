@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    font-family: "Roboto", sans-serif;
 }
 
 a {
@@ -104,8 +105,8 @@ header {
 .main-header a {
     font-size: 16pt;
     color: aliceblue;
-    font-weight: 600;
-    padding: 25px 28px 25px 28px;
+    font-weight: 500;
+    padding: 25px 25.5px 25px 25.5px;
 }
 
 .main-header a.active {
@@ -120,10 +121,89 @@ header {
     margin-bottom: 10px;
     text-align: justify;
     line-height: 1.5;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 
 /* GLOBAL TEXT STYLE END */
+
+/* --------- GOOGLE FONT --------- */
+
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .roboto-thin-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .roboto-light-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .roboto-regular-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .roboto-medium-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .roboto-bold-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .roboto-black-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+
+/* --------- GOOGLE FONT --------- */
 
 /* BEMUTATKOZAS START */
 
@@ -144,17 +224,25 @@ p.signature {
 
 .claim-management h1{
     font-weight: 400;
-    margin: 40px 0 30px 0;
+    margin: 70px 0 0px 0;
 }
 
 .claim-management h2{
-    font-weight:500;
+    font-weight:400;
     margin: 10px 0 20px 40px;
 }
 
 .claim-management ul{
     margin-left: 50px;
     margin-bottom: 30px;
+}
+
+.claim-management .line {
+    background-color: rgb(189, 40, 43);
+    width: 900px;
+    height: 6px;
+    margin: 7px 0 50px 0;
+    border-radius: 9px;
 }
 
 .claim-management .flex-container {
@@ -195,13 +283,14 @@ p.last{
 
 .services h2{
     margin-bottom: 0px;
-    font-size: 20pt;
+    font-size: 30pt;
+    font-weight: 400;
 }
 
 .services .line {
     background-color: rgb(189, 40, 43);
-    width: 1100px;
-    height: 13px;
+    width: 1065px;
+    height: 8px;
     margin: 10px 0 60px 0;
     border-radius: 9px;
 }
@@ -370,6 +459,7 @@ p.last{
     height: 106px;
     object-fit: contain;
     box-shadow: 2px 2px 6px black;
+    border-radius: 10px;
 
 }
 
@@ -404,7 +494,24 @@ p.last{
 }
 
 .colour-codes h2 {
-    margin-bottom: 20px;
+    margin-bottom: 0px;
+    font-weight: 400;
+}
+
+.colour-codes .line-first {
+    background-color: rgb(189, 40, 43);
+    width: 245px;
+    height: 6px;
+    margin: 7px 0 20px 0;
+    border-radius: 9px;
+}
+
+.colour-codes .line-second {
+    background-color: rgb(189, 40, 43);
+    width: 295px;
+    height: 6px;
+    margin: 7px 0 20px 0;
+    border-radius: 9px;
 }
 
 .colour-codes .usage {
@@ -563,7 +670,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .contact .line {
     background-color: rgb(189, 40, 43);
-    width: 730px;
+    width: 640px;
     height: 8px;
     margin: 10px 0 10px 0;
     border-radius: 9px;
@@ -598,7 +705,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .contact .contact-title {
-    font-weight: 700;
+    font-weight: 500;
     margin-bottom: 2px;
     background-color: rgb(189, 40, 43);
     color: white;
