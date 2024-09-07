@@ -40,10 +40,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 .header-top  img {
     height: 100px;
+    margin: 2.5px 0 2.5px 0;
 }
 
 .header-top > ul{
@@ -120,7 +122,7 @@ header {
     font-size: 14pt;
     margin-bottom: 10px;
     text-align: justify;
-    line-height: 1.5;
+    line-height: 2;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -214,8 +216,12 @@ header {
     gap: 30px;
 }
 
+.introduction img {
+    border-radius: 15px;
+}
+
 p.signature {
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 /* BEMUTATKOZAS END */
@@ -268,7 +274,7 @@ p.signature {
 }
 
 p.last{
-    margin-bottom: 1000px;
+    margin-bottom: 100px;
 }
 
 /* KARUGYINTEZES END */
@@ -525,7 +531,7 @@ p.last{
 }
 
 .colour-codes .image-flex-container>img {
-    margin: 15px 0 40px 0;
+    margin: 70px 0 40px 0;
     width: 600px;
 }
 
@@ -584,7 +590,7 @@ p.last{
 }
 
 .quotation-request img {
-    height: 320px;
+    height: 423px;
     border-radius: 15px;
 }
 
@@ -706,7 +712,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .contact .contact-title {
     font-weight: 500;
-    margin-bottom: 2px;
+    margin-bottom: 10px;
     background-color: rgb(189, 40, 43);
     color: white;
     width: max-content;
