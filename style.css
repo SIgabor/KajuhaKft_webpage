@@ -22,6 +22,10 @@ body {
     display: none;
 }
 
+.image-flex-container-for-mobile {
+    display: none;
+}
+
 .skeleton {
     width: 1400px;
 }
@@ -775,11 +779,23 @@ td {
     .colour-codes .position img {
         width: 100%;
         margin-bottom: 15px;
+        margin-left: 0;
     }
 
     .colour-codes .image-flex-container>img {
         width: 100%;
-        margin-bottom: 15px;
+        margin: 30px 0 15px 0;
+    }
+
+    .colour-codes .image-flex-container-for-mobile>img {
+        margin: 30px 0 15px 0;
+
+    }
+
+    .colour-codes .image-flex-container-for-mobile {
+        display: flex;
+        justify-content: center;
+        width: 100%;
     }
 
     .colour-codes .position .table-flex-container {
