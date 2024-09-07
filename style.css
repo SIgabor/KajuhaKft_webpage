@@ -73,6 +73,10 @@ header {}
     color: black;
 }
 
+#openBtn {
+    display: none;
+}
+
 .main-header {
     background-color: rgb(189, 40, 43);
     display: flex;
@@ -126,7 +130,7 @@ header {}
         width: 100svw;
         background-color: rgb(189, 40, 43);
         height: 6px;
-        margin-bottom: 20px;
+        margin-bottom: 35px;
         box-shadow: 0 3px 4px black
     }
 
@@ -140,16 +144,59 @@ header {}
     }
 
     .header-top img {
-        height: 7vh;
+        height: 50px;
     }
 
     .main-header {
-        display: none;
+        width: 0;
+        position: fixed;
+        z-index: 3;
+        height: 100%;
+        top: 65px;
+        right: 0;
+        overflow-x: hidden;
+        transition: width 0.5s ease; /* Smooth transition for width */
+        padding-top: 0px;
+        background-color: rgb(189, 40, 43); /* Add a background color for visibility */
+    }
+    
+    .main-header ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    
+    .main-header ul li {
+        padding: 10px;
+        box-shadow: 0 3px 4px black
+         /* Optional: Add some border for visual separation */
+    }
+    
+    .main-header ul li a {
+        text-decoration: none;
+        color: #ffffff; /* Change text color */
     }
 
     .content-width {
         width: 90vw;
     }
+
+    #openBtn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: none;
+        border: none;
+        outline: none;
+        box-shadow: none;
+        width: 50px;
+        height: 50px;
+        font-size: 25pt;
+        transition: transform 0.5s ease, content 0.5s ease, font-size 0.5s ease; /* Smooth transition for rotation, content, and size */
+    }
+    
 
 
 }
@@ -263,7 +310,13 @@ p.signature {
     margin-top: 30px;
 }
 
-@media screen and (max-width: 480px) {}
+@media screen and (max-width: 480px) {
+
+    .introduction {
+        gap: 20px;
+    }
+
+}
 
 /* BEMUTATKOZAS END */
 
@@ -317,6 +370,47 @@ p.last {
     margin-bottom: 100px;
 }
 
+@media screen and (max-width: 480px) {
+
+    .claim-management .flex-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .claim-management .flex-container .claim-management-img{
+        width: 100%;
+    }
+
+    .claim-management h1 {
+        margin-top: 30px;
+    }
+
+    .claim-management h2{
+        margin: 0px 0 10px 0;
+    }
+
+    .claim-management .line {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .claim-management ul {
+        margin: 0 ;
+    }
+
+    .claim-management ul.last{
+        margin-bottom: 30px;
+    }
+
+    .claim-management .blue-yellow {
+        width: 100%;
+        height: auto;
+        margin-bottom: 30px;
+    }
+
+
+}
+
 /* KARUGYINTEZES END */
 
 /* SZOLGALTATASOK START */
@@ -340,8 +434,6 @@ p.last {
     margin: 10px 0 60px 0;
     border-radius: 9px;
 }
-
-.services a {}
 
 .services .flex-container {
     display: flex;
@@ -444,7 +536,7 @@ p.last {
     text-decoration: none;
     color: white;
     /* Szöveg színe */
-    font-size: 24px;
+    font-size: 18pt;
     /* Szöveg mérete */
     opacity: 0;
     /* Kezdetben láthatatlan */
@@ -466,6 +558,24 @@ p.last {
     /* Láthatóvá válik */
     pointer-events: auto;
     /* Az a tag foghatóvá válik kattintásra */
+}
+
+@media screen and (max-width: 480px) {
+
+    .services h2 {
+        font-size: 24pt;
+    }
+
+    .services .line {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .services .grid-container {
+        grid-template-columns: 1fr ;
+        gap: 20px;
+    }
+
 }
 
 /* SZOLGALTATASOK END */
@@ -522,6 +632,32 @@ p.last {
     box-shadow: 2px 2px 6px black;
     border-radius: 10px;
 
+}
+
+@media screen and (max-width: 480px) {
+
+    .documents li {
+        margin-bottom: 30px;
+    }
+    
+    .documents .line-first {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .documents .line-second {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .documents .flex-container {
+        row-gap: 25px;
+    }
+
+    .documents img {
+        width: 158px;
+        height: 88px;
+    }
 }
 
 /* DOKUMENTUMOK END */

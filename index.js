@@ -6,6 +6,24 @@ function btnPress() {
     }, 100);
 };
 
+function openNav() {
+    const button = document.getElementById('openBtn');
+    const header = document.querySelector('.main-header'); // Use querySelector to get the first element
+
+    if (button.innerHTML === '☰') {
+        button.style.transform = 'rotate(180deg)';
+        button.innerHTML = '×'; // Change to "X"
+        button.style.fontSize = '28pt'; // Slightly increase the size for emphasis
+        header.style.width = '250px'; // Expand the header
+    } else {
+        button.style.transform = 'rotate(0deg)';
+        button.innerHTML = '☰'; // Change back to hamburger menu
+        button.style.fontSize = '25pt'; // Reset size
+        header.style.width = '0'; // Collapse the header
+    }
+}
+
+
 function sendMail() {
     var params = {
         name: document.getElementById("name").value,
