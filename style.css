@@ -155,7 +155,6 @@ header {}
         width: 0;
         position: absolute;
         z-index: 3;
-        height: 80svh;
         top: 65px;
         right: 0;
         overflow-x: hidden;
@@ -175,7 +174,7 @@ header {}
     }
 
     .main-header ul li {
-        padding: 7px;
+        padding: 5px;
         box-shadow: 0 3px 4px black
             /* Optional: Add some border for visual separation */
     }
