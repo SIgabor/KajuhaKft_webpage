@@ -615,7 +615,7 @@ p.last {
 
 .documents .line-first {
     background-color: rgb(189, 40, 43);
-    width: 240px;
+    width: 245px;
     height: 6px;
     margin: 7px 0 30px 0;
     border-radius: 9px;
@@ -623,7 +623,7 @@ p.last {
 
 .documents .line-second {
     background-color: rgb(189, 40, 43);
-    width: 650px;
+    width: 540px;
     height: 6px;
     margin: 7px 0 45px 0;
     border-radius: 9px;
@@ -669,6 +669,7 @@ p.last {
     .documents img {
         width: 158px;
         height: 88px;
+        object-fit: cover;
     }
 }
 
@@ -803,6 +804,10 @@ td {
         gap: 0;
     }
 
+    .colour-codes .line-second {
+        width: 330px;
+    }
+
     .colour-codes .line-first,
     .colour-codes .line-second {
         margin-bottom: 25px;
@@ -920,6 +925,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
     .quotation-request .line {
         width: 100%;
+        margin-bottom: 30px;
     }
 
     .quotation-request .dual-section img {
