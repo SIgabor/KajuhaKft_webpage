@@ -615,8 +615,6 @@ p.last {
         /* Középre igazítás */
         transition: opacity 0.5s ease;
         /* Smooth fade-in */
-        pointer-events: none;
-        /* Az a tag nem fogható el kattintásra, amíg nincs hover */
         z-index: 2;
     }
 
