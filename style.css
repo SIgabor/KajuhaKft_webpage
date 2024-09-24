@@ -581,16 +581,7 @@ p.last {
     /* Az a tag foghatóvá válik kattintásra */
 }
 
-@media screen and (max-width: 1060px) {
-
-    .services .line {
-        width: 100%;
-    }
-
-    .services .grid-container {
-        grid-template-columns: 1fr 1fr;
-        gap: 5vw;
-    }
+@media screen and (max-width: 1390px) {
 
     .item::before {
         background-color: rgba(0, 0, 0, 0.5);
@@ -624,6 +615,19 @@ p.last {
 
 }
 
+@media screen and (max-width: 1060px) {
+
+    .services .line {
+        width: 100%;
+    }
+
+    .services .grid-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 5vw;
+    }
+
+}
+
 @media screen and (max-width: 480px) {
 
     .services h2 {
@@ -638,36 +642,6 @@ p.last {
     .services .grid-container {
         grid-template-columns: 1fr;
         gap: 20px;
-    }
-
-    .item::before {
-        background-color: rgba(0, 0, 0, 0.5);
-        /* Sötétítjük a háttérképet */
-    }
-
-    .item a {
-        display: flex;
-        /* Csak a tartalom mérete */
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 100%;
-        text-decoration: none;
-        color: white;
-        /* Szöveg színe */
-        font-size: 18pt;
-        /* Szöveg mérete */
-        opacity: 1;
-        /* Kezdetben láthatatlan */
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        /* Középre igazítás */
-        transition: opacity 0.5s ease;
-        /* Smooth fade-in */
-        pointer-events: auto;
-        z-index: 2;
     }
 
 }
