@@ -43,9 +43,9 @@ body {
 
 /*----!!!----EXPERIMENTAL----!!!----*/
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1450px) {
     .skeleton {
-        width: 1000px;
+        width: 90vw;
     }
 }
 
@@ -142,7 +142,7 @@ header {}
     text-decoration: underline;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1450px) {
 
     .mobile-line {
         display: block;
@@ -394,7 +394,7 @@ p.last {
     margin-bottom: 100px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1060px) {
 
     .claim-management .flex-container {
         flex-direction: column;
@@ -584,6 +584,49 @@ p.last {
     /* Az a tag foghatóvá válik kattintásra */
 }
 
+@media screen and (max-width: 1060px) {
+
+    .services .line {
+        width: 100%;
+    }
+
+    .services .grid-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 5vw;
+    }
+
+    .item::before {
+        background-color: rgba(0, 0, 0, 0.5);
+        /* Sötétítjük a háttérképet */
+    }
+
+    .item a {
+        display: flex;
+        /* Csak a tartalom mérete */
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        color: white;
+        /* Szöveg színe */
+        font-size: 18pt;
+        /* Szöveg mérete */
+        opacity: 1;
+        /* Kezdetben láthatatlan */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        /* Középre igazítás */
+        transition: opacity 0.5s ease;
+        /* Smooth fade-in */
+        pointer-events: auto;
+        z-index: 2;
+    }
+
+}
+
 @media screen and (max-width: 480px) {
 
     .services h2 {
@@ -711,7 +754,7 @@ p.last {
     .documents img {
         width: 158px;
         height: 88px;
-        object-fit: cover;
+        object-fit: contain;
     }
 }
 
@@ -959,6 +1002,21 @@ input[type="number"]::-webkit-outer-spin-button {
     margin-top: 15px;
 }
 
+@media screen and (max-width: 1060px) {
+    
+    .quotation-request .dual-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 45px;
+    }
+
+    .quotation-request img {
+        height: 300px;
+        order: -1;
+    }
+
+}
+
 @media screen and (max-width: 480px) {
 
     .quotation-request h2 {
@@ -1051,7 +1109,7 @@ span {
     font-size: 18pt;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1060px) {
     .contact {
         flex-direction: column;
         gap: 30px;
