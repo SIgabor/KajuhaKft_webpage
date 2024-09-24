@@ -43,11 +43,7 @@ body {
 
 /*----!!!----EXPERIMENTAL----!!!----*/
 
-@media screen and (max-width: 1450px) {
-    .skeleton {
-        width: 90vw;
-    }
-}
+
 
 /*----!!!----EXPERIMENTAL----!!!----*/
 
@@ -142,7 +138,7 @@ header {}
     text-decoration: underline;
 }
 
-@media screen and (max-width: 1450px) {
+@media screen and (max-width: 1390px) {
 
     .mobile-line {
         display: block;
