@@ -87,6 +87,8 @@ header {}
 
 .header-top a {
     color: black;
+    display: flex;
+    align-items: center;
 }
 
 #openBtn {
@@ -152,7 +154,6 @@ header {}
 
     .skeleton {
         width: 90vw;
-
     }
 
     .header-top>ul {
@@ -161,13 +162,14 @@ header {}
 
     .header-top img {
         height: 50px;
+        padding-bottom: 4px;
     }
 
     .main-header {
         width: 0;
         position: absolute;
         z-index: 3;
-        top: 65px;
+        top: 61.3px;
         right: 0;
         overflow-x: hidden;
         transition: width 0.5s ease;
@@ -210,7 +212,7 @@ header {}
         border: none;
         outline: none;
         box-shadow: none;
-        width: 50px;
+        width: 30px;
         height: 50px;
         font-size: 25pt;
         transition: transform 0.5s ease, content 0.5s ease, font-size 0.5s ease;
