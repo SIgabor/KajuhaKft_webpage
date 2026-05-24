@@ -21,4 +21,4 @@ jobs:
           **/old_index.html*
           **/.gitattributes*
           **/README.md*
-          
+          **/.gitignore*
