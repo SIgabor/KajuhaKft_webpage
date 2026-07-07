@@ -56,3 +56,32 @@ function sendMail() {
             .catch((err) => console.log(err));
     }
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const popup = document.getElementById("popupOverlay");
+    const closeButton = document.getElementById("closePopup");
+
+    popup.classList.add("show");
+
+    closeButton.addEventListener("click", () => {
+        popup.classList.remove("show");
+    });
+
+    let canClose = false;
+
+    setTimeout(() => {
+        canClose = true;
+    }, 2000);
+
+    popup.addEventListener("click", (e) => {
+
+        if (!canClose) {
+            return;
+        }
+
+        if (e.target === popup) {
+            popup.classList.remove("show");
+        }
+        });
+});
