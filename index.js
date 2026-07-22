@@ -59,6 +59,12 @@ function sendMail() {
 
 document.addEventListener("DOMContentLoaded", () => {
 
+    const ENABLE_POPUP = false;
+
+    if (!ENABLE_POPUP) {
+        return;
+    }
+
     const popup = document.getElementById("popupOverlay");
     const closeButton = document.getElementById("closePopup");
 
@@ -83,5 +89,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (e.target === popup) {
             popup.classList.remove("show");
         }
-        });
+
+    });
+
 });
